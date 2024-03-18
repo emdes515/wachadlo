@@ -1,0 +1,93 @@
+body {
+  background-color: rgb(35, 35, 35);
+  color: aliceblue;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  text-align: center;
+}
+
+label[for='pendulum'] {
+  font-size: 25px;
+  margin: 10px;
+}
+
+select {
+  text-align: center;
+  padding: 10px;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  background-color: antiquewhite;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+input {
+  margin: 30px 30px;
+  padding: 10px;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  background-color: rgb(0, 111, 196);
+  font-weight: 600;
+  font-size: 20px;
+  border: 1px solid rgb(255, 255, 255);
+  color: aliceblue;
+}
+
+#spren div,
+#math div {
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 45vw;
+}
+
+.doNotDisplay {
+  display: none;
+}
+
+button {
+  width: 200px;
+  height: 50px;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  font-size: 30px;
+  font-weight: 600;
+  background-color: antiquewhite;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ea;
+  -moz-transition: all 0.3s ea;
+  -ms-transition: all 0.3s ea;
+  -o-transition: all 0.3s ea;
+}
+
+button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+
+button:active {
+  transform: scale(0.9);
+  -webkit-transform: scale(0.9);
+  -moz-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  -o-transform: scale(0.9);
+}

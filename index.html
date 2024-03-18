@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Wachadło</title>
+    <link
+      rel="stylesheet"
+      href="style.css"
+    />
+  </head>
+  <body>
+    <h1>Program do obliczania parametrów wachadła</h1>
+
+    <div>
+      <label for="pendulum">Wybierz rodzaj wachadła:</label>
+      <select
+        name="pendulum"
+        id="pendulum"
+      >
+        <option value="matematyczne">Mateamtyczne</option>
+        <option value="sprężynowe">Sprężynowe</option>
+      </select>
+    </div>
+
+    <span
+      >podja 2 parmaetry, a po kliknęciu przycisku licz zostaną wyliczone pozostałe</span
+    >
+
+    <div
+      id="spren"
+      class="doNotDisplay"
+    >
+      <div>
+        <label for="m">m - Masa [kg]</label>
+        <input
+          type="number"
+          id="m"
+          name="m"
+        />
+      </div>
+
+      <div>
+        <label for="k">k - Stała spreżystości [N/m]</label>
+        <input
+          type="number"
+          id="k"
+          name="k"
+        />
+      </div>
+      <div>
+        <label for="Ts">T - Okres</label>
+        <input
+          type="number"
+          id="Ts"
+          name="Ts"
+        />
+      </div>
+
+      <div>
+        <label for="fs">f - Częstotliwość [Hz]</label>
+        <input
+          type="number"
+          id="fs"
+          name="fs"
+        />
+      </div>
+    </div>
+
+    <div id="math">
+      <div>
+        <label for="l">l - Długość [m]</label>
+        <input
+          type="number"
+          id="l"
+          name="l"
+        />
+      </div>
+
+      <div>
+        <label for="g">g - Przyspieszenie ziemskie [m/s^2]</label>
+        <input
+          type="number"
+          id="g"
+          name="g"
+        />
+      </div>
+      <div>
+        <label for="Tm">T - Okres</label>
+        <input
+          type="number"
+          id="Tm"
+          name="Tm"
+        />
+      </div>
+
+      <div>
+        <label for="fm">f - Częstotliwość [Hz]</label>
+        <input
+          type="number"
+          id="fm"
+          name="fm"
+        />
+      </div>
+    </div>
+    <div>
+      <button id="licz">Licz</button>
+      <button id="clear">Czyść</button>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
